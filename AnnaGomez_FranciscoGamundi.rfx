@@ -982,7 +982,7 @@
       <RmRegistryBranch NAME="Effect Workspace.Proyecto1Shaders.RockAndLavaPixel" API="" XML_VERSION="RenderMonkey 1.71">
        <RmRegistryBranch NAME="Disassembly" API="" XML_VERSION="RenderMonkey 1.71"/>
        <RmStringVariable NAME="Editing Shader" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
-Vertex Program]]></RmTextDataBlock></RmStringVariable>
+Fragment Program]]></RmTextDataBlock></RmStringVariable>
        <RmStringVariable NAME="Editing Pass" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
 Pass 0]]></RmTextDataBlock></RmStringVariable>
        <RmIntegerVariable NAME="Y" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="0" MIN="-10" MAX="10" CLAMP="FALSE"/>
@@ -1037,13 +1037,13 @@ Pass 0]]></RmTextDataBlock></RmStringVariable>
     </RmRegistryBranch>
     <RmRegistryBranch NAME="WORKSPACE" API="" XML_VERSION="RenderMonkey 1.71">
      <RmStringVariable NAME="LAST_SAVE" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
-2/5/2015 13:53:16]]></RmTextDataBlock></RmStringVariable>
+2/5/2015 16:16:21]]></RmTextDataBlock></RmStringVariable>
      <RmStringVariable NAME="VERSION" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
 RenderMonkey Version 1.82 (build 322)]]></RmTextDataBlock></RmStringVariable>
      <RmStringVariable NAME="XML_VERSION" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
 RenderMonkey 1.71]]></RmTextDataBlock></RmStringVariable>
      <RmStringVariable NAME="BASE_WORKSPACE_PATH" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
-C:\Users\PC PERSONAL\Documents\Gráficas\]]></RmTextDataBlock></RmStringVariable>
+C:\Users\PC PERSONAL\Documents\Gráficas\Proyecto1Shaders\]]></RmTextDataBlock></RmStringVariable>
     </RmRegistryBranch>
    </RmRegistryBranch>
   </RmRegistryBranch>
@@ -1058,7 +1058,7 @@ C:\Users\PC PERSONAL\Documents\Gráficas\]]></RmTextDataBlock></RmStringVariable
       <RmStreamChannel NAME="Binormal_0" API="" DATA_SIZE="12" DATA_TYPE="2" REGISTER="0" USAGE="7" USAGE_INDEX="0" ATTRIBUTE_NAME="rm_Binormal"/>
      </RmStream>
     </RmStreamMap>
-    <RmModelData NAME="Model" API="" FILE_NAME="..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Models\rock01_shader.obj" ORIENTATION="0"/>
+    <RmModelData NAME="Model" API="" FILE_NAME="..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Models\rock01_shader.obj" ORIENTATION="0"/>
     <RmGLPass NAME="Pass 0" API="OpenGL" PASS_INDEX="0" ENABLED="TRUE">
      <RmModelReference NAME="Model" API=""/>
      <RmGLShader NAME="Vertex Program" API="OpenGL" PIXEL_SHADER="FALSE"><RmShaderCode TYPE="TEXT"><![CDATA[
@@ -1085,8 +1085,6 @@ void main(void)
   
    //capturar los uvs
    stCoord = gl_MultiTexCoord0.st;
-   stCoord2 = gl_MultiTexCoord1.st;
-   stCoord3 = gl_MultiTexCoord2.st;
    if(int(lp.w) == 1)
       auxvld = normalize(lp.xyz - vPos.xyz);
    else
@@ -1185,13 +1183,13 @@ void main(void)
      <RmColorVariable NAME="cAmb" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="0.000000" VALUE_1="0.000000" VALUE_2="0.000000" VALUE_3="1.000000"/>
      <RmColorVariable NAME="cDif" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="0.874510" VALUE_1="0.705263" VALUE_2="0.726316" VALUE_3="1.000000"/>
      <RmColorVariable NAME="cL" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="1.000000" VALUE_1="1.000000" VALUE_2="0.956480" VALUE_3="1.000000"/>
-     <Rm2DTextureVariable NAME="texMK_Rock01" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texMK_Rock01.jpg" ORIGIN="0"/>
-     <Rm2DTextureVariable NAME="normalMapTex2" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texNP_Rock01.jpg" ORIGIN="0"/>
-     <Rm2DTextureVariable NAME="texCC_Rock01" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texCC_Rock01.jpg" ORIGIN="0"/>
-     <Rm2DTextureVariable NAME="texCC_Lava01" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texCC_Lava01.jpg" ORIGIN="0"/>
-     <Rm2DTextureVariable NAME="texAO" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texAO_Rock01.jpg" ORIGIN="0"/>
-     <Rm2DTextureVariable NAME="normalMapTex1" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texNP_MKRock_01.jpg" ORIGIN="0"/>
-     <Rm2DTextureVariable NAME="texSP" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texSP_Rock01.jpg" ORIGIN="0"/>
+     <Rm2DTextureVariable NAME="texMK_Rock01" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texMK_Rock01.jpg" ORIGIN="0"/>
+     <Rm2DTextureVariable NAME="normalMapTex2" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texNP_Rock01.jpg" ORIGIN="0"/>
+     <Rm2DTextureVariable NAME="texCC_Rock01" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texCC_Rock01.jpg" ORIGIN="0"/>
+     <Rm2DTextureVariable NAME="texCC_Lava01" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texCC_Lava01.jpg" ORIGIN="0"/>
+     <Rm2DTextureVariable NAME="texAO" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texAO_Rock01.jpg" ORIGIN="0"/>
+     <Rm2DTextureVariable NAME="normalMapTex1" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texNP_MKRock_01.jpg" ORIGIN="0"/>
+     <Rm2DTextureVariable NAME="texSP" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texSP_Rock01.jpg" ORIGIN="0"/>
      <RmTextureObject NAME="txRockC" API="OpenGL" STATE_INDEX="3" VERTEX_TEXTURE="FALSE">
       <RmTextureReference NAME="texCC_Rock01" API=""/>
      </RmTextureObject>
@@ -1242,19 +1240,22 @@ void main(void)
       <RmStreamChannel NAME="TexCoord_0" API="" DATA_SIZE="8" DATA_TYPE="1" REGISTER="0" USAGE="5" USAGE_INDEX="0" ATTRIBUTE_NAME="rm_TexCoord0"/>
      </RmStream>
     </RmStreamMap>
-    <RmModelData NAME="Model" API="" FILE_NAME="..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Models\Sphere.3ds" ORIENTATION="0"/>
+    <RmModelData NAME="Model" API="" FILE_NAME="..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Models\Sphere.3ds" ORIENTATION="0"/>
     <RmGLPass NAME="Pass 0" API="OpenGL" PASS_INDEX="0" ENABLED="TRUE">
      <RmModelReference NAME="Model" API=""/>
      <RmGLShader NAME="Vertex Program" API="OpenGL" PIXEL_SHADER="FALSE"><RmShaderCode TYPE="TEXT"><![CDATA[
 uniform vec4 lP, cDif, cSpec, cAmb;
 varying vec3 vN, vld;
 varying vec4 vPos, lp;
+varying vec2 stCoord;
 
 void main(void)
 {
    lp = gl_ModelViewMatrix *lP;
    vN = normalize(gl_NormalMatrix * gl_Normal);
    vPos = gl_ModelViewMatrix * gl_Vertex;
+   stCoord = gl_MultiTexCoord0.st;
+   
    if(int(lp.w) == 1)
       vld = normalize(lp.xyz - vPos.xyz);
    else
@@ -1266,37 +1267,36 @@ varying vec4 vPos, lp;
 varying vec3 vN, vld;
 uniform vec4 cAmb, cL, cDif, cSpec;
 vec3 ball_color = vec3(1,1,0);
+varying vec2 stCoord;
 
 vec4 diffuse(){
    float dotLN = max(dot(vld.xyz, vN),0.0);
-   return cL * cDif * dotLN;
+   return cL * cDif * dotLN * ball_color;
 }
 
 vec4 surface_star(float ka, float kd, vec3 star_color, 
                      float npoints, float sctr, float tctr) {
       float ss, tt, angle, r, a, in_out;
       float rmin = 0.07, rmax = 0.2;
-      float s = 0.00;
-      float t = 0.00;
       float starangle = 2.00*(3.14)/npoints;
       vec3 p0 = rmax*vec3(cos(0),sin(0), 0);
       vec3 pi = rmin*vec3(cos(starangle/2),sin(starangle/2),0);
       vec3 d0 = pi - p0;
       vec3 d1;
-      ss = s - sctr;
-      tt = t - tctr;
+      ss = stCoord.s - sctr;
+      tt = stCoord.t - tctr;
       angle = atan(ss, tt) + 3.14;
       r = sqrt(ss*ss + tt*tt);
       a = mod(angle, starangle)/starangle;
       if (a >= 0.5)
          a = 1 - a;
       d1 = r*(cos(a), sin(a),0) - p0;
-      in_out = step(0, pow(d0,d1).z );
-      Ct = mix(Cs, star_color, in_out);
+      in_out = step(0, cross(d0,d1).z );
+      vec3 Ct = mix(ball_color, star_color, in_out);
       /* diffuse (“matte”) shading model */
-      Oi = Os;
-      Ci = Os * Ct * (Ka * cAmb + Kd * diffuse());
-      return Ci;
+      //Oi = Os;
+      vec3 Ci = Ct * (ka * cAmb + kd * diffuse());
+      return vec4(Ci.x, Ci.y, Ci.z, 1);
    }
 
 void main(void)
@@ -1313,6 +1313,10 @@ void main(void)
      <RmColorVariable NAME="cSpec" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="1.000000" VALUE_1="1.000000" VALUE_2="1.000000" VALUE_3="1.000000"/>
      <RmColorVariable NAME="cDif" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="0.874510" VALUE_1="0.705263" VALUE_2="0.726316" VALUE_3="1.000000"/>
      <RmColorVariable NAME="cL" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="1.000000" VALUE_1="1.000000" VALUE_2="1.000000" VALUE_3="1.000000"/>
+     <RmShaderConstant NAME="lP" API="" REGISTER="-1"/>
+     <RmShaderConstant NAME="cL" API="" REGISTER="-1"/>
+     <RmShaderConstant NAME="cDif" API="" REGISTER="-1"/>
+     <RmShaderConstant NAME="cAmb" API="" REGISTER="-1"/>
     </RmGLPass>
    </RmOpenGLEffect>
   </RmEffectGroup>
