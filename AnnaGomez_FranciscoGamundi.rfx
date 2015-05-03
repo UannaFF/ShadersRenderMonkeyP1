@@ -963,7 +963,7 @@
         <RmIntegerVariable NAME="Y" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="118" MIN="-10" MAX="10" CLAMP="FALSE"/>
         <RmIntegerVariable NAME="Width" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="648" MIN="-10" MAX="10" CLAMP="FALSE"/>
         <RmIntegerVariable NAME="Height" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="533" MIN="-10" MAX="10" CLAMP="FALSE"/>
-        <RmIntegerVariable NAME="ShowStatus" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="1" MIN="-10" MAX="10" CLAMP="FALSE"/>
+        <RmIntegerVariable NAME="ShowStatus" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="3" MIN="-10" MAX="10" CLAMP="FALSE"/>
         <RmIntegerVariable NAME="Visible" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="1" MIN="-10" MAX="10" CLAMP="FALSE"/>
         <RmIntegerVariable NAME="Minimized X" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="-1" MIN="-10" MAX="10" CLAMP="FALSE"/>
         <RmIntegerVariable NAME="Minimized Y" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="-1" MIN="-10" MAX="10" CLAMP="FALSE"/>
@@ -1003,14 +1003,14 @@
 Fragment Program]]></RmTextDataBlock></RmStringVariable>
        <RmStringVariable NAME="Editing Pass" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
 Pass 0]]></RmTextDataBlock></RmStringVariable>
-       <RmIntegerVariable NAME="Y" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="52" MIN="-10" MAX="10" CLAMP="FALSE"/>
+       <RmIntegerVariable NAME="Y" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="151" MIN="-10" MAX="10" CLAMP="FALSE"/>
        <RmIntegerVariable NAME="Width" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="650" MIN="-10" MAX="10" CLAMP="FALSE"/>
        <RmIntegerVariable NAME="Height" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="527" MIN="-10" MAX="10" CLAMP="FALSE"/>
        <RmIntegerVariable NAME="ShowStatus" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="1" MIN="-10" MAX="10" CLAMP="FALSE"/>
        <RmIntegerVariable NAME="Visible" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="1" MIN="-10" MAX="10" CLAMP="FALSE"/>
        <RmIntegerVariable NAME="Minimized X" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="-1" MIN="-10" MAX="10" CLAMP="FALSE"/>
        <RmIntegerVariable NAME="Minimized Y" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="-1" MIN="-10" MAX="10" CLAMP="FALSE"/>
-       <RmIntegerVariable NAME="X" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="632" MIN="-10" MAX="10" CLAMP="FALSE"/>
+       <RmIntegerVariable NAME="X" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="118" MIN="-10" MAX="10" CLAMP="FALSE"/>
       </RmRegistryBranch>
       <RmRegistryBranch NAME="Effect Workspace.Proyecto1Shaders.PixarBall" API="" XML_VERSION="RenderMonkey 1.71">
        <RmRegistryBranch NAME="Disassembly" API="" XML_VERSION="RenderMonkey 1.71"/>
@@ -1063,7 +1063,7 @@ Pass 0]]></RmTextDataBlock></RmStringVariable>
     </RmRegistryBranch>
     <RmRegistryBranch NAME="WORKSPACE" API="" XML_VERSION="RenderMonkey 1.71">
      <RmStringVariable NAME="LAST_SAVE" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
-2/5/2015 22:10:53]]></RmTextDataBlock></RmStringVariable>
+2/5/2015 22:34:24]]></RmTextDataBlock></RmStringVariable>
      <RmStringVariable NAME="VERSION" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
 RenderMonkey Version 1.82 (build 322)]]></RmTextDataBlock></RmStringVariable>
      <RmStringVariable NAME="XML_VERSION" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
@@ -1200,22 +1200,22 @@ void main(void)
      <RmFloatVariable NAME="shine" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="55.000000" MIN="-1.000000" MAX="1.000000" CLAMP="FALSE"/>
      <RmFloatVariable NAME="iS" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="1.000000" MIN="-1.000000" MAX="1.000000" CLAMP="FALSE"/>
      <RmVectorVariable NAME="lP" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="10.000000" VALUE_1="80.000000" VALUE_2="0.000000" VALUE_3="1.000000" MIN="-10.000000" MAX="10.000000" CLAMP="FALSE" NORMALIZE="FALSE"/>
-     <RmFloatVariable NAME="repeatS" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="1.000000" MIN="0.000000" MAX="5.000000" CLAMP="FALSE"/>
-     <RmFloatVariable NAME="repeatT" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="1.000000" MIN="-1.000000" MAX="1.000000" CLAMP="FALSE"/>
-     <RmBooleanVariable NAME="useNormalMap" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="TRUE"/>
+     <RmFloatVariable NAME="repeatS" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="1.000000" MIN="0.000000" MAX="5.000000" CLAMP="FALSE"/>
+     <RmFloatVariable NAME="repeatT" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="1.000000" MIN="-1.000000" MAX="1.000000" CLAMP="FALSE"/>
+     <RmBooleanVariable NAME="useNormalMap" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="TRUE"/>
      <RmFloatVariable NAME="fTime0_X" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="Time0_X" VALUE="0.000000" MIN="-1.000000" MAX="1.000000" CLAMP="FALSE"/>
-     <RmFloatVariable NAME="fTime0_1" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="Time0_1" VALUE="0.537939" MIN="-1.000000" MAX="1.000000" CLAMP="FALSE"/>
-     <RmColorVariable NAME="cSpec" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="1.000000" VALUE_1="1.000000" VALUE_2="1.000000" VALUE_3="1.000000"/>
-     <RmColorVariable NAME="cAmb" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="0.000000" VALUE_1="0.000000" VALUE_2="0.000000" VALUE_3="1.000000"/>
-     <RmColorVariable NAME="cDif" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="0.874510" VALUE_1="0.705263" VALUE_2="0.726316" VALUE_3="1.000000"/>
-     <RmColorVariable NAME="cL" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="1.000000" VALUE_1="1.000000" VALUE_2="0.956480" VALUE_3="1.000000"/>
-     <Rm2DTextureVariable NAME="texMK_Rock01" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texMK_Rock01.jpg" ORIGIN="0"/>
-     <Rm2DTextureVariable NAME="normalMapTex2" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texNP_Rock01.jpg" ORIGIN="0"/>
-     <Rm2DTextureVariable NAME="texCC_Rock01" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texCC_Rock01.jpg" ORIGIN="0"/>
-     <Rm2DTextureVariable NAME="texCC_Lava01" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texCC_Lava01.jpg" ORIGIN="0"/>
-     <Rm2DTextureVariable NAME="texAO" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texAO_Rock01.jpg" ORIGIN="0"/>
-     <Rm2DTextureVariable NAME="normalMapTex1" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texNP_MKRock_01.jpg" ORIGIN="0"/>
-     <Rm2DTextureVariable NAME="texSP" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texSP_Rock01.jpg" ORIGIN="0"/>
+     <RmFloatVariable NAME="fTime0_1" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="Time0_1" VALUE="0.300003" MIN="-1.000000" MAX="1.000000" CLAMP="FALSE"/>
+     <RmColorVariable NAME="cSpec" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE_0="1.000000" VALUE_1="1.000000" VALUE_2="1.000000" VALUE_3="1.000000"/>
+     <RmColorVariable NAME="cAmb" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE_0="0.000000" VALUE_1="0.000000" VALUE_2="0.000000" VALUE_3="1.000000"/>
+     <RmColorVariable NAME="cDif" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE_0="0.874510" VALUE_1="0.705263" VALUE_2="0.726316" VALUE_3="1.000000"/>
+     <RmColorVariable NAME="cL" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE_0="1.000000" VALUE_1="1.000000" VALUE_2="0.956480" VALUE_3="1.000000"/>
+     <Rm2DTextureVariable NAME="texMK_Rock01" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texMK_Rock01.jpg" ORIGIN="0"/>
+     <Rm2DTextureVariable NAME="normalMapTex2" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texNP_Rock01.jpg" ORIGIN="0"/>
+     <Rm2DTextureVariable NAME="texCC_Rock01" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texCC_Rock01.jpg" ORIGIN="0"/>
+     <Rm2DTextureVariable NAME="texCC_Lava01" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texCC_Lava01.jpg" ORIGIN="0"/>
+     <Rm2DTextureVariable NAME="texAO" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texAO_Rock01.jpg" ORIGIN="0"/>
+     <Rm2DTextureVariable NAME="normalMapTex1" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texNP_MKRock_01.jpg" ORIGIN="0"/>
+     <Rm2DTextureVariable NAME="texSP" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\texSP_Rock01.jpg" ORIGIN="0"/>
      <RmTextureObject NAME="txRockC" API="OpenGL" STATE_INDEX="3" VERTEX_TEXTURE="FALSE">
       <RmTextureReference NAME="texCC_Rock01" API=""/>
      </RmTextureObject>
@@ -1347,13 +1347,13 @@ void main(void)
       vec3 r = normalize(reflect(-normalize(vld.xyz), vN));
       compSpec = pow(max(dot(r,normalize(vC)),0.0),shine)*cSpec;
    }
-   gl_FragColor = cAmb + iL*((cDif + (iS*compSpec)) * dotLN * surface_star());
+   gl_FragColor = cAmb + iL*((cDif * dotLN * surface_star()) + (iS*compSpec));
 }]]></RmShaderCode></RmGLShader>
      <RmStreamMapReference NAME="Stream Mapping" API=""/>
      <RmFloatVariable NAME="iL" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="1.000000" MIN="-1.000000" MAX="1.000000" CLAMP="FALSE"/>
      <RmFloatVariable NAME="shine" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="10.000000" MIN="-1.000000" MAX="1.000000" CLAMP="FALSE"/>
      <RmFloatVariable NAME="iS" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="1.000000" MIN="-1.000000" MAX="1.000000" CLAMP="FALSE"/>
-     <RmVectorVariable NAME="lP" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="10.799999" VALUE_1="11.200001" VALUE_2="12.400000" VALUE_3="0.000000" MIN="-10.000000" MAX="10.000000" CLAMP="FALSE" NORMALIZE="FALSE"/>
+     <RmVectorVariable NAME="lP" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="10.799999" VALUE_1="11.200001" VALUE_2="-17.167999" VALUE_3="0.000000" MIN="-10.000000" MAX="10.000000" CLAMP="FALSE" NORMALIZE="FALSE"/>
      <RmDynamicVariable NAME="nPoints" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VARIABLE_TYPE="INTEGER" ROWS="1" COLUMNS="1" FIXED_SIZE="TRUE" MIN="0" MAX="100" CLAMP="FALSE" NORMALIZE="FALSE">
       <RmDynamicVariableValueContainer>
        <RmDynamicVariableValue ROW_INDEX="0" COLUMN_INDEX="0" VALUE="5"/>
